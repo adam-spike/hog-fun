@@ -1,16 +1,8 @@
-// Hog images data - automatically detected from all-the-hogs folder
+// Hog images data - loaded dynamically from index.json
 const HOGS_FOLDER = 'all-the-hogs';
 
-// List of all hog images
-const hogs = [
-    'hog-concern-v2.png',
-    'hog-happy-v2.png',
-    'hog-sad-v2.png',
-    'hog-think-v2.png',
-    'hog-thumbsup-v2.png',
-    '20260126-100655-hog-thanks-transparent.png',
-    '20260126-101152-hog-offers-a-torta-ahogada-transparent.png'
-];
+// List of all hog images (loaded dynamically)
+let hogs = [];
 
 // Extract display name from filename
 function getDisplayName(filename) {
@@ -124,10 +116,26 @@ function filterHogs(query) {
     }
 }
 
+// Load hogs from index.json
+async function loadHogs() {
+    try {
+        const response = await fetch('index.json');
+        const data = await response.json();
+        hogs = data.hogs.map(h => h.filename);
+        return hogs;
+    } catch (error) {
+        console.error('Failed to load index.json:', error);
+        return [];
+    }
+}
+
 // Initialize
-function init() {
+async function init() {
     const grid = document.getElementById('hog-grid');
     const searchInput = document.getElementById('search');
+
+    // Load hogs from index.json
+    await loadHogs();
 
     // Render all hogs
     hogs.forEach(filename => {
