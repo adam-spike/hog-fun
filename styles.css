@@ -1,33 +1,17 @@
-/* CSS Variables for theming */
+/* PostHog Branded CSS Variables */
 :root {
-    --bg-primary: #1a1a2e;
-    --bg-secondary: #16213e;
-    --bg-card: #1f2937;
-    --bg-card-hover: #2d3748;
-    --text-primary: #f1f5f9;
-    --text-secondary: #94a3b8;
-    --text-muted: #64748b;
-    --accent: #f59e0b;
-    --accent-hover: #fbbf24;
-    --border: #374151;
-    --shadow: rgba(0, 0, 0, 0.3);
-}
-
-/* Light mode */
-@media (prefers-color-scheme: light) {
-    :root {
-        --bg-primary: #f8fafc;
-        --bg-secondary: #e2e8f0;
-        --bg-card: #ffffff;
-        --bg-card-hover: #f1f5f9;
-        --text-primary: #1e293b;
-        --text-secondary: #475569;
-        --text-muted: #64748b;
-        --accent: #d97706;
-        --accent-hover: #b45309;
-        --border: #e2e8f0;
-        --shadow: rgba(0, 0, 0, 0.1);
-    }
+    --bg-primary: #151515;
+    --bg-secondary: #1d1f27;
+    --bg-card: #2c2c2c;
+    --bg-card-hover: #3a3a3a;
+    --text-primary: #eeefe9;
+    --text-secondary: #b3b3b3;
+    --text-muted: #737373;
+    --accent: #F9BD2B;
+    --accent-hover: #ffd666;
+    --accent-secondary: #1D4AFF;
+    --border: #3c3c3c;
+    --shadow: rgba(0, 0, 0, 0.5);
 }
 
 /* Reset */
@@ -58,17 +42,16 @@ header {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, var(--accent), #f472b6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 .subtitle {
     color: var(--text-secondary);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -84,7 +67,7 @@ h1 {
     padding: 0.75rem 1rem 0.75rem 2.5rem;
     font-size: 1rem;
     border: 2px solid var(--border);
-    border-radius: 12px;
+    border-radius: 8px;
     background: var(--bg-secondary);
     color: var(--text-primary);
     transition: border-color 0.2s, box-shadow 0.2s;
@@ -93,7 +76,7 @@ h1 {
 #search:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+    box-shadow: 0 0 0 3px rgba(249, 189, 43, 0.25);
 }
 
 #search::placeholder {
@@ -125,11 +108,11 @@ h1 {
 /* Hog Card */
 .hog-card {
     background: var(--bg-card);
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 1rem;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s;
     border: 1px solid var(--border);
 }
 
@@ -137,6 +120,7 @@ h1 {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px var(--shadow);
     background: var(--bg-card-hover);
+    border-color: var(--accent);
 }
 
 .hog-card:active {
@@ -178,10 +162,10 @@ h1 {
     left: 50%;
     transform: translateX(-50%) translateY(100px);
     background: var(--accent);
-    color: #000;
+    color: #151515;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
-    font-weight: 500;
+    font-weight: 600;
     opacity: 0;
     transition: transform 0.3s, opacity 0.3s;
     z-index: 1000;
@@ -204,16 +188,18 @@ footer {
 footer a {
     color: var(--accent);
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 footer a:hover {
+    color: var(--accent-hover);
     text-decoration: underline;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .hog-grid {
@@ -247,11 +233,11 @@ footer a:hover {
     animation: fadeIn 0.3s ease forwards;
 }
 
-.hog-card:nth-child(1) { animation-delay: 0.05s; }
-.hog-card:nth-child(2) { animation-delay: 0.1s; }
-.hog-card:nth-child(3) { animation-delay: 0.15s; }
-.hog-card:nth-child(4) { animation-delay: 0.2s; }
-.hog-card:nth-child(5) { animation-delay: 0.25s; }
-.hog-card:nth-child(6) { animation-delay: 0.3s; }
-.hog-card:nth-child(7) { animation-delay: 0.35s; }
-.hog-card:nth-child(8) { animation-delay: 0.4s; }
+.hog-card:nth-child(1) { animation-delay: 0.02s; }
+.hog-card:nth-child(2) { animation-delay: 0.04s; }
+.hog-card:nth-child(3) { animation-delay: 0.06s; }
+.hog-card:nth-child(4) { animation-delay: 0.08s; }
+.hog-card:nth-child(5) { animation-delay: 0.1s; }
+.hog-card:nth-child(6) { animation-delay: 0.12s; }
+.hog-card:nth-child(7) { animation-delay: 0.14s; }
+.hog-card:nth-child(8) { animation-delay: 0.16s; }
