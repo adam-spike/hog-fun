@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hog.fun - PostHog Hedgehog Emojis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦔</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦔 hog.fun</h1>
+            <p class="subtitle">PostHog hedgehog emojis for Discord & Slack</p>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search hogs..." autocomplete="off">
+                <span class="search-icon">🔍</span>
+            </div>
+            <p class="hint">Click any hog to copy • Right-click to download</p>
+        </header>
+
+        <main>
+            <div id="hog-grid" class="hog-grid">
+                <!-- Hogs will be loaded here by JavaScript -->
+            </div>
+            <p id="no-results" class="no-results" style="display: none;">No hogs found 😢</p>
+        </main>
+
+        <footer>
+            <p>
+                Made with 💜 for the <a href="https://posthog.com" target="_blank">PostHog</a> community
+                • <a href="https://github.com/PostHog/posthog" target="_blank">GitHub</a>
+                • <a href="index.md" target="_blank">View Index</a>
+            </p>
+        </footer>
+    </div>
+
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
