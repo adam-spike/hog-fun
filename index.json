@@ -1,31 +1,6 @@
 {
   "hogs": [
     {
-      "filename": "hog-concern-v2.png",
-      "name": "hog-concern",
-      "path": "all-the-hogs/hog-concern-v2.png"
-    },
-    {
-      "filename": "hog-happy-v2.png",
-      "name": "hog-happy",
-      "path": "all-the-hogs/hog-happy-v2.png"
-    },
-    {
-      "filename": "hog-sad-v2.png",
-      "name": "hog-sad",
-      "path": "all-the-hogs/hog-sad-v2.png"
-    },
-    {
-      "filename": "hog-think-v2.png",
-      "name": "hog-think",
-      "path": "all-the-hogs/hog-think-v2.png"
-    },
-    {
-      "filename": "hog-thumbsup-v2.png",
-      "name": "hog-thumbsup",
-      "path": "all-the-hogs/hog-thumbsup-v2.png"
-    },
-    {
       "filename": "20260126-171353-hog-thanks-transparent.png",
       "name": "hog-thanks-transparent",
       "path": "all-the-hogs/20260126-171353-hog-thanks-transparent.png"
