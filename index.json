@@ -1,16 +1,6 @@
 {
   "hogs": [
     {
-      "filename": "20260126-100655-hog-thanks-transparent.png",
-      "name": "hog-thanks",
-      "path": "all-the-hogs/20260126-100655-hog-thanks-transparent.png"
-    },
-    {
-      "filename": "20260126-101152-hog-offers-a-torta-ahogada-transparent.png",
-      "name": "hog-offers-a-torta-ahogada",
-      "path": "all-the-hogs/20260126-101152-hog-offers-a-torta-ahogada-transparent.png"
-    },
-    {
       "filename": "hog-concern-v2.png",
       "name": "hog-concern",
       "path": "all-the-hogs/hog-concern-v2.png"
@@ -34,41 +24,6 @@
       "filename": "hog-thumbsup-v2.png",
       "name": "hog-thumbsup",
       "path": "all-the-hogs/hog-thumbsup-v2.png"
-    },
-    {
-      "filename": "20260126-110004-hog-chefkiss-with-hat-transparent.png",
-      "name": "hog-chefkiss-with-hat",
-      "path": "all-the-hogs/20260126-110004-hog-chefkiss-with-hat-transparent.png"
-    },
-    {
-      "filename": "20260126-121523-hog-bob-ross-transparent.png",
-      "name": "hog-bob-ross-transparent",
-      "path": "all-the-hogs/20260126-121523-hog-bob-ross-transparent.png"
-    },
-    {
-      "filename": "20260126-130004-hog-tries-some-yummy-yummy-crossplane-transparent.png",
-      "name": "hog-tries-some-yummy-yummy-crossplane-transparent",
-      "path": "all-the-hogs/20260126-130004-hog-tries-some-yummy-yummy-crossplane-transparent.png"
-    },
-    {
-      "filename": "20260126-140004-hog-offers-tim-tams-transparent.png",
-      "name": "hog-offers-tim-tams-transparent",
-      "path": "all-the-hogs/20260126-140004-hog-offers-tim-tams-transparent.png"
-    },
-    {
-      "filename": "20260126-150005-hog-everything-is-on-fire-transparent.png",
-      "name": "hog-everything-is-on-fire-transparent",
-      "path": "all-the-hogs/20260126-150005-hog-everything-is-on-fire-transparent.png"
-    },
-    {
-      "filename": "20260126-161004-hog-thanks-you-for-the-new-hog-transparent.png",
-      "name": "hog-thanks-you-for-the-new-hog-transparent",
-      "path": "all-the-hogs/20260126-161004-hog-thanks-you-for-the-new-hog-transparent.png"
-    },
-    {
-      "filename": "20260126-170004-hog-ghost-transparent.png",
-      "name": "hog-ghost-transparent",
-      "path": "all-the-hogs/20260126-170004-hog-ghost-transparent.png"
     }
   ]
 }
